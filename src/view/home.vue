@@ -8,6 +8,7 @@
     export default {
         name: "home",
         mounted:function() {
+            console.log(11111)
         }
     }
 </script>

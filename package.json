@@ -47,7 +47,9 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
+    "es6-promise": "^4.2.5",
     "vue": "^2.5.17",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
   }
 }

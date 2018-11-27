@@ -3,7 +3,7 @@
 
         <router-link to="/home"><button>首页</button></router-link>
         <router-link to="/list/red"><button>列表页</button></router-link>
-        <router-link to="/detail/1"><button>详情页</button></router-link>
+        <router-link to="/detail/1?a=1"><button>详情页</button></router-link>
 
 
         <router-view class="view one"></router-view>

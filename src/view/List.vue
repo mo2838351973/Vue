@@ -1,7 +1,7 @@
 <template>
     <div>
-        <router-link to="/list/red">Go to red</router-link>
-        <router-link to="/list/green">Go to green</router-link>
+        <router-link to="/list/red">red</router-link>
+        <router-link to="/list/green">green</router-link>
         <transition name="fade">
             <router-view></router-view>
         </transition>

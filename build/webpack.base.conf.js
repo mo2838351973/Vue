@@ -70,6 +70,7 @@ module.exports = {
     ],
     output: {
         filename: 'js/[name].[hash:5].bundle.js',
+        chunkFilename:'js/[name].[chunkhash:5].chunk.js',
         //打包文件输出的目录
         path: path.resolve('./dist/static'),
         //静态资源最终访问路径
