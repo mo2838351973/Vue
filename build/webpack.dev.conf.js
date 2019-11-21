@@ -31,6 +31,14 @@ const devWebpackConfig = merge(baseWebpackConfig, {
                 use: [
                     'vue-style-loader',
                     'css-loader',
+                    // {
+                    //     loader: 'px2rem-loader',
+                    //     // options here
+                    //     options: {
+                    //         remUni: 75,
+                    //         remPrecision: 8
+                    //     }
+                    // },
                     {
                         loader: "postcss-loader",
                         options: {
@@ -38,6 +46,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
                         }
                     },
                     'stylus-loader',
+                    
                 ]
             },
         ]

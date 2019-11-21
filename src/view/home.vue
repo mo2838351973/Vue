@@ -1,14 +1,29 @@
 <template>
     <div>
-        hello! 首页
+        首页
+        <p>{{message}}</p>
+        <p>Reversed message: "{{ reversedMessage() }}"</p>
     </div>
 </template>
-
+import Utils from "../../static/utils"
 <script>
     export default {
         name: "home",
-        mounted:function() {
+        data(){
+            return {
+                message:'hello!'
+            }
+        },
+        mounted() {
             console.log(11111)
+        },
+        methods: {
+            reversedMessage: function () {
+                return this.message.split('').reverse().join('')
+            }
+        },
+        created(){
+            Utils.a()
         }
     }
 </script>
