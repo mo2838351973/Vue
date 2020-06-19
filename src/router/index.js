@@ -50,7 +50,12 @@ const router = new VueRouter({
             path: '/detail/:id',
             props:(route)=>({id:route.query.a}),//vue-router 使用props可以将组件与router解耦
             component: ()=>import("@/view/Detail"),
-            meta: {requiresAuth: true, title: '详情页', describtion: '这是一个详情'}
+            meta: {requiresAuth: true, title: '详情', describtion: '这是一个详情页'}
+        },,
+        {
+            path: '/topic',
+            component: ()=>import("@/view/Topic"),
+            meta: {requiresAuth: true, title: '主题', describtion: '这是一个技术分享主题列表'}
         },
     ],
     scrollBehavior(to, from, savedPosition) {
